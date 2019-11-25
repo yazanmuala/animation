@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<section></section>
+	<script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+	<script type="text/javascript">
+		$(function glitchEffects(){
+			$glitch =$('<div class="glitch"></div>')
+			var x=(Math.random() * 200);
+			var y=(Math.random() * 200);
+
+			$glitch.css({
+				'left' : x+'px',
+				'top' : y+'px',
+			}).appendTo('section').fadeOut(200,function(){
+				$(this).remove();
+				glitchEffects();
+			});
+		});
+	</script>
+</body>
+</html>

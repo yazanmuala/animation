@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+		
+		div{
+			text-align: center;
+			font-size: 50px;
+			animation-name: fromto;
+			animation-duration: 4s;
+		}
+
+		@keyframes fromto{
+			from{
+				color: red;
+			}
+			to{
+				color: yellow;
+			}
+		}
+		#first{
+			position: relative;
+			margin: 0 auto;
+			border:solid 3px  #00f9ff;
+			border-radius: 50%;
+			width: 300px;
+			height: 300px;
+			animation: rot 3s infinite linear;
+		}
+		#second{
+			position: absolute;
+			width: 100px;
+			height: 100px;
+			border-bottom:solid 3px #00f9ff;
+			top: 17%;
+    		right: 54%; 
+
+		}
+		#therd{
+			
+			position: absolute;
+			width: 25px;
+			height: 25px;
+			border-radius: 50%;
+			top: 87%;
+    		left: 100%;
+			background-color: #00f9ff;
+		}
+		@keyframes rot{
+			from{
+				transform: rotate(0deg);
+			}
+			to{
+				transform: rotate(360deg);
+			}
+		}
+		#first:hover{
+			 animation-play-state: paused;
+		}
+		#pord{
+			padding-top: 8px;
+			margin: 0 auto;
+			width: 100px;
+			height: 250px;
+			border:2px solid #000;
+		}
+		#pordfoot{
+			margin: 0px auto;
+			width: 25px;
+			height: 200px;
+			background-color: #000;
+		}
+		#red{
+			margin-top:5px; 
+			width: 80px;
+			height: 80px;
+			background-color: gray;
+			border-radius: 50%;
+			margin: 0 auto;
+			animation: colorsred 2s infinite;
+			
+		}
+		#orange{
+			width: 80px;
+			height: 80px;
+			background-color: gray;
+			border-radius: 50%;
+			margin: 0 auto;
+			animation: colorsorange 2s infinite;
+			
+		}
+
+		#green{
+			width: 80px;
+			height: 80px;
+			background-color: gray;
+			border-radius: 50%;
+			margin: 0 auto;
+			animation: colorsgreen 2s infinite;
+			
+		}
+		@keyframes colorsred {
+			0%{
+				background-color: gray;
+			}
+			50%{
+				background-color: red;
+			}
+			100%{
+				background-color: gray;
+				
+				}	
+		}
+		@keyframes colorsorange {
+			0%{
+				background-color: gray;
+			}
+			
+			50%{
+				background-color: gray;
+				
+				}
+				75%{
+				background-color: orange;
+			}	
+			100%{
+				background-color: gray;
+				
+				}	
+		}
+		@keyframes colorsgreen {
+			0%{
+				background-color: gray;
+			}
+			
+			40%{
+				background-color: gray;
+				
+				}	
+			60%{
+				background-color: gray;
+				
+				}
+			80%{
+				background-color: green;
+			}	
+			100%{
+				background-color: gray;
+				}	
+		}
+
+
+	</style>
+</head>
+<body>
+<div>
+	YAZAN
+</div>
+
+<div id="first">
+	<div id="second">
+		<div id="therd">
+			
+		</div>
+	</div>
+</div>
+<div id="pord">
+	<div id="red">
+		
+	</div>
+	<div id="orange">
+		
+	</div>
+	<div id="green">
+		
+	</div>
+</div>
+<div id="pordfoot">
+</div>
+
+</body>
+</html>
