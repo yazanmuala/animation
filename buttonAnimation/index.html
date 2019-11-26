@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+		button{
+			opacity: 0;	
+			animation: but 1s infinite;
+		}
+		button:hover{
+			outline: none;
+			border:2px solid #00f;
+			animation-name:butt;
+			animation-play-state: paused;
+			background-color: #00f;
+			color: #fff;
+
+		}
+		@keyframes but{
+			to{
+				opacity: 0;
+			}
+			from{
+				opacity: 1;
+				background-color: #00f;
+			}
+		}
+		@keyframes butt{
+			from{
+				opacity: 1;
+			}
+		}
+
+	</style>
+</head>
+<body>
+<button>button</button>
+</body>
+</html>
